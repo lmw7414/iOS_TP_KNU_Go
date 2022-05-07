@@ -20,6 +20,10 @@
 		D270685F28255BBA00D66A64 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270685C28255BBA00D66A64 /* CircleImage.swift */; };
 		D270686028255BBA00D66A64 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270685D28255BBA00D66A64 /* FavoriteButton.swift */; };
 		D270686128255BBA00D66A64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270685E28255BBA00D66A64 /* MapView.swift */; };
+		D270688928256D0500D66A64 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270688828256D0500D66A64 /* LocationService.swift */; };
+		D270688B2825A28100D66A64 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270688A2825A28100D66A64 /* SplashView.swift */; };
+		D270688E2825A4B800D66A64 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270688D2825A4B800D66A64 /* StartButtonView.swift */; };
+		D27068902825A94C00D66A64 /* SplashContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D270688F2825A94C00D66A64 /* SplashContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		D270685D28255BBA00D66A64 /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		D270685E28255BBA00D66A64 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D270686228255CB000D66A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D270688828256D0500D66A64 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D270688A2825A28100D66A64 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D270688D2825A4B800D66A64 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		D270688F2825A94C00D66A64 /* SplashContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		D2706831282559FE00D66A64 /* knuGo */ = {
 			isa = PBXGroup;
 			children = (
+				D270688728256CF000D66A64 /* Services */,
 				D270686228255CB000D66A64 /* Info.plist */,
 				D2706832282559FE00D66A64 /* knuGoApp.swift */,
 				D270684928255B3500D66A64 /* Views */,
@@ -93,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D270685228255B8600D66A64 /* ContentView.swift */,
+				D270688C2825A47F00D66A64 /* Splash */,
 				D270685428255B8900D66A64 /* Landmarks */,
 				D270685528255B9D00D66A64 /* Helpers */,
 			);
@@ -134,6 +144,24 @@
 				D270685E28255BBA00D66A64 /* MapView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D270688728256CF000D66A64 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D270688828256D0500D66A64 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D270688C2825A47F00D66A64 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D270688A2825A28100D66A64 /* SplashView.swift */,
+				D270688D2825A4B800D66A64 /* StartButtonView.swift */,
+				D270688F2825A94C00D66A64 /* SplashContentView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +240,11 @@
 				D270685B28255BB000D66A64 /* LandMarkRow.swift in Sources */,
 				D270686028255BBA00D66A64 /* FavoriteButton.swift in Sources */,
 				D270685A28255BB000D66A64 /* LandmarkList.swift in Sources */,
+				D270688B2825A28100D66A64 /* SplashView.swift in Sources */,
 				D270685028255B7700D66A64 /* Landmark.swift in Sources */,
+				D27068902825A94C00D66A64 /* SplashContentView.swift in Sources */,
+				D270688E2825A4B800D66A64 /* StartButtonView.swift in Sources */,
+				D270688928256D0500D66A64 /* LocationService.swift in Sources */,
 				D270685328255B8600D66A64 /* ContentView.swift in Sources */,
 				D270686128255BBA00D66A64 /* MapView.swift in Sources */,
 				D270685928255BB000D66A64 /* LandmarkDetail.swift in Sources */,
