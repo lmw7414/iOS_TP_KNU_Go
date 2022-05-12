@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         //VStack{
             //MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
-            LandmarkList()
+            LoadingView()
         //}
         
         

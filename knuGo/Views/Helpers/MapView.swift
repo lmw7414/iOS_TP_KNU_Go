@@ -7,7 +7,7 @@
 
 import SwiftUI
 import MapKit
-
+import CoreLocation
 struct MapView: View {
     var coordinate: CLLocationCoordinate2D
     @State private var region = MKCoordinateRegion()
