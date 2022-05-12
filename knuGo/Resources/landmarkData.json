@@ -5,8 +5,8 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1001,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isFeatured": true,
+        "isFavorite": true,
         "park": "경북대학교 본관",
         "coordinates": {
             "longitude": 128.6120049,
@@ -23,8 +23,8 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1002,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isFeatured": true,
+        "isFavorite": true,
         "park": "센트럴파크",
         "coordinates": {
             "longitude": 128.61466801,

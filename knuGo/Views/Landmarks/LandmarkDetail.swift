@@ -45,7 +45,7 @@ struct LandmarkDetail: View {
 
                 Divider()
 
-                Text("About \(landmark.name)")
+                Text("\(landmark.name)은")
                     .font(.title2)
                 Text(landmark.description)
             }

@@ -22,12 +22,12 @@ struct LandmarkList: View {
         
         NavigationView {
             List {
-                Section(header: Text("Settings")) {
+                Section(header: Text("내가 가본 곳")) {
                     Toggle(isOn: $showFavoritesOnly) {
-                        Text("Not visited")
+                        Text("아직 안가본곳")
                     }
                 }.headerProminence(.increased)
-                Section(header: Text("Landmarks")){
+                Section(header: Text("장소")){
                     ForEach(filteredLandmarks) { landmark in
                         NavigationLink {
                             LandmarkDetail(landmark: landmark)
