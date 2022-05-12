@@ -1,194 +1,296 @@
 [
     {
-        "name": "Turtle Rock",
-        "category": "Rivers",
-        "city": "Twentynine Palms",
-        "state": "California",
+        "name": "본관",
+        "category": "건물",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Joshua Tree National Park",
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "경북대학교 본관",
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "turtlerock"
+            "longitude": 128.6120049,
+            "latitude": 35.89043757
+            },
+        "description": "경북대학교의 가장 오래된 건물!",
+        "imageName": "picture1"
     },
+    
+    
     {
-        "name": "Silver Salmon Creek",
-        "category": "Lakes",
-        "city": "Port Alsworth",
-        "state": "Alaska",
+        "name": "센트럴 파크",
+        "category": "공원",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1002,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Lake Clark National Park and Preserve",
+        "park": "센트럴파크",
         "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "silversalmoncreek"
+            "longitude": 128.61466801,
+            "latitude": 35.88631298
+            },
+        "description": "캠퍼스 분위기를 제대로 느껴볼 수 있는 피크닉 장소, 포브스 선정 자체공강 후 맥주먹기 가장 좋은 장소 1위",
+        "imageName": "picture2"
     },
     {
-        "name": "Chilkoot Trail",
-        "category": "Mountains",
-        "city": "Skagway",
-        "state": "Alaska",
+        "name": "일청담",
+        "category": "연못",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1003,
         "isFeatured": false,
-        "isFavorite": true,
-        "park": "Klondike Gold Rush National Historical Park",
+        "isFavorite": false,
+        "park": "융복합관 앞",
         "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "chilkoottrail"
+            "longitude": 128.61215198,
+            "latitude": 35.88866322
+            },
+        "description": "커플들이 손잡고 산책하는 모습을 볼 수 있는 아주 불편한 장소",
+        "imageName": "picture3"
     },
     {
-        "name": "St. Mary Lake",
-        "category": "Lakes",
-        "city": "Browning",
-        "state": "Montana",
+        "name": "북문",
+        "category": "문",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Glacier National Park",
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "경북대학교 북문",
         "coordinates": {
-            "longitude": -113.536248,
-            "latitude": 48.69423
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "stmarylake"
+            "longitude": 128.6093298,
+            "latitude": 35.89234836
+            },
+        "description": "금요일만 되면 걸어다닐 틈조차 없는 경북대학교의 핫 플레이스",
+        "imageName": "picture4"
     },
     {
-        "name": "Twin Lake",
-        "category": "Lakes",
-        "city": "Twin Lakes",
-        "state": "Alaska",
+        "name": "IT대 벚꽃 로드",
+        "category": "산책로",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1005,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Lake Clark National Park and Preserve",
+        "park": "융복합관 앞",
         "coordinates": {
-            "longitude": -153.849883,
-            "latitude": 60.641684
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "twinlake"
+            "longitude": 128.61174098,
+            "latitude": 35.88883472
+            },
+        "description": "경북대학교의 벚꽃 산책 코스, 수업들으러 가면서 가볍게 걷기 좋은 산책길",
+        "imageName": "picture5"
     },
     {
-        "name": "Lake McDonald",
-        "category": "Mountains",
-        "city": "West Glacier",
-        "state": "Montana",
+        "name": "도서관(신관)",
+        "category": "도서관",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1006,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Glacier National Park",
+        "park": "도서관 구관 옆",
         "coordinates": {
-            "longitude": -113.934831,
-            "latitude": 48.56002
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "lakemcdonald"
+            "longitude": 128.61267973,
+            "latitude": 35.89192515
+            },
+        "description": "시험기간만 되면 불이 꺼지지 않는 대한민국의 인재들이 모여있는 곳",
+        "imageName": "picture6"
     },
     {
-        "name": "Charley Rivers",
-        "category": "Rivers",
-        "city": "Eaking",
-        "state": "Alaska",
+        "name": "분수대",
+        "category": "분수대",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1007,
-        "isFeatured": true,
+        "isFeatured": false,
         "isFavorite": false,
-        "park": "Charley Rivers National Preserve",
+        "park": "도서관 앞",
         "coordinates": {
-            "longitude": -143.122586,
-            "latitude": 65.350021
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "charleyrivers"
+            "longitude": 128.61260894,
+            "latitude": 35.89166386
+            },
+        "description": "생긴지 얼마 안된 따끈따끈한 분수대",
+        "imageName": "picture7"
     },
     {
-        "name": "Icy Bay",
-        "category": "Mountains",
-        "city": "Icy Bay",
-        "state": "Alaska",
+        "name": "도서관(구관)",
+        "category": "도서관",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1008,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Wrangell-St. Elias National Park and Preserve",
+        "park": "도서관 신관 옆",
         "coordinates": {
-            "longitude": -141.518167,
-            "latitude": 60.089917
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "icybay"
+            "longitude": 128.61202462,
+            "latitude": 35.89169282
+            },
+        "description": "새롭게 인테리어 된 구관! 신관보다 나은 시설을 자랑하는 구관. 구관이 명관",
+        "imageName": "picture8"
     },
     {
-        "name": "Rainbow Lake",
-        "category": "Lakes",
-        "city": "Willow",
-        "state": "Alaska",
+        "name": "텍문",
+        "category": "문",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1009,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "State Recreation Area",
+        "park": "테크노빌딩 앞",
         "coordinates": {
-            "longitude": -150.086103,
-            "latitude": 61.694334
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "rainbowlake"
+            "longitude": 128.61478278,
+            "latitude": 35.89253029
+            },
+        "description": "경북대학교 타코야키 맛집, 매주 화요일 텍문을 찾아주세요! ",
+        "imageName": "picture9"
     },
     {
-        "name": "Hidden Lake",
-        "category": "Lakes",
-        "city": "Newhalem",
-        "state": "Washington",
+        "name": "누리관문",
+        "category": "문",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1010,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "North Cascades National Park",
+        "park": "누리관 앞",
         "coordinates": {
-            "longitude": -121.17799,
-            "latitude": 48.495442
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "hiddenlake"
+            "longitude": 128.61388954,
+            "latitude": 35.89432502
+            },
+        "description": "경북대학교 누리관문",
+        "imageName": "picture10"
     },
     {
-        "name": "Chincoteague",
-        "category": "Rivers",
-        "city": "Chincoteague",
-        "state": "Virginia",
+        "name": "짭담이",
+        "category": "동물",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1011,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Chincoteague National Wildlife Refuge",
+        "park": "일청담, 테니스장 근처",
         "coordinates": {
-            "longitude": -75.383212,
-            "latitude": 37.91531
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "chincoteague"
+            "longitude": 128.61161696,
+            "latitude": 35.88928417
+            },
+        "description": "경북대학교의 슈퍼스타, 엄청난 애교를 자랑하는 짭담이",
+        "imageName": "picture11"
     },
     {
-        "name": "Lake Umbagog",
-        "category": "Lakes",
-        "city": "Errol",
-        "state": "New Hampshire",
+        "name": "지도못",
+        "category": "연못",
+        "city": "대구광역시",
+        "state": "경북대학교",
         "id": 1012,
         "isFeatured": false,
         "isFavorite": false,
-        "park": "Umbagog National Wildlife Refuge",
+        "park": "공대12호관 앞",
         "coordinates": {
-            "longitude": -71.056816,
-            "latitude": 44.747408
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        "imageName": "umbagog"
+            "longitude": 128.609572,
+            "latitude": 35.88914684
+            },
+        "description": "공식당 앞 연못",
+        "imageName": "picture12"
+    },
+    {
+        "name": "공식당",
+        "category": "식당",
+        "city": "대구광역시",
+        "state": "경북대학교",
+        "id": 1013,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "공대 12호관 옆 식당",
+        "coordinates": {
+            "longitude": 128.60966602,
+            "latitude": 35.8883447
+            },
+        "description": "경북대 학생이라면 모를 수 없는 학식의 성지! 육회비빔밥, 쟁반수육, 떙초우동 등 학식에서는 만나볼 수 없는 특식들을 먹어볼 수 있는 최고의 학식 명소! 때 맞춰서 안가면 먹고싶은 메뉴를 못 먹을 수 있으니 빨리 가보는 것이 좋음",
+        "imageName": "picture13"
+    },
+    {
+        "name": "융복합관",
+        "category": "건물",
+        "city": "대구광역시",
+        "state": "경북대학교",
+        "id": 1014,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "4호관 옆",
+        "coordinates": {
+            "longitude": 128.6114566,
+            "latitude": 35.88810239
+            },
+        "description": "컴퓨터학부생과 떼놓을 수 없는 건물, 하루 일과의 절반이상을 융복합관에서 보내는 경우도 많다",
+        "imageName": "picture14"
+    },
+    {
+        "name": "경구리",
+        "category": "동물",
+        "city": "대구광역시",
+        "state": "경북대학교",
+        "id": 1015,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "도서관, 본관 앞",
+        "coordinates": {
+            "longitude": 128.61150191,
+            "latitude": 35.89035916
+            },
+        "description": "경북대학교의 명물 경북대 너구리",
+        "imageName": "picture15"
+    },
+    {
+        "name": "플라타너스 길",
+        "category": "산책로",
+        "city": "대구광역시",
+        "state": "경북대학교",
+        "id": 1016,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "테니스장 옆 산책로",
+        "coordinates": {
+            "longitude": 128.61126821,
+            "latitude": 35.88924975
+            },
+        "description": "경북대학교에서 가장 걷기 좋은 산책로, 모쏠도 애인을 만들 수 있는 곳으로 알려져있다 ",
+        "imageName": "picture16"
+    },
+    {
+        "name": "누리관",
+        "category": "기숙사",
+        "city": "대구광역시",
+        "state": "경북대학교",
+        "id": 1001,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "누리관",
+        "coordinates": {
+            "longitude": 128.61324419,
+            "latitude": 35.8935175
+            },
+        "description": "경북대학교 모범생들이 모여있는 기숙사, 공부 못하는 학생들은 근처에 가는 것만으로도 눈치를 보게 된다고.. ",
+        "imageName": "picture17"
+    },
+    
+    {
+        "name": "첨성관",
+        "category": "문",
+        "city": "대구광역시",
+        "state": "경북대학교",
+        "id": 1018,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "테크노빌딩 앞",
+        "coordinates": {
+            "longitude": 128.61494834,
+            "latitude": 35.89140554
+            },
+        "description": "경북대학교에서 두번째로 좋은 기숙사, 학식이 맛없다는 소문이…",
+        "imageName": "picture18"
     }
+    
+
+   
 ]
