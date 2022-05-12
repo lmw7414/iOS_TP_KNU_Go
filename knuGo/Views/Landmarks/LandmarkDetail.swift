@@ -6,21 +6,24 @@
 //
 
 import SwiftUI
+import CoreLocation
+import MapKit
 
 struct LandmarkDetail: View {
     @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
-
+    
     var landmarkIndex: Int {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
 
     var body: some View {
+    
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
-
+            
             CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)

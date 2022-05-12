@@ -11,21 +11,22 @@ struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
-    
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || !landmark.isFavorite)
         }
     }
-
+    
     var body: some View {
+        
+        
         NavigationView {
             List {
                 Section(header: Text("Settings")) {
                     Toggle(isOn: $showFavoritesOnly) {
                         Text("Not visited")
                     }
-                }
+                }.headerProminence(.increased)
                 Section(header: Text("Landmarks")){
                     ForEach(filteredLandmarks) { landmark in
                         NavigationLink {
@@ -35,9 +36,8 @@ struct LandmarkList: View {
                         }
                     }
                 }
-            }
-            .navigationTitle("Landmarks")
-        }
+            }.listStyle(PlainListStyle()).headerProminence(.increased)
+        }.navigationBarTitle("Landmarks").navigationBarBackButtonHidden(true).navigationBarHidden(true)
     }
 }
 

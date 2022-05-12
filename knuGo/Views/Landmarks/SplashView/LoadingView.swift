@@ -11,17 +11,17 @@ import SwiftUI
 struct LoadingView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Knu Go")
-                    .font(.system(size: 40))
+            VStack(spacing: 0){
+                Text("KNU Go")
+                    .font(.system(size: 50))
                 LottieView(filename: "Loading")
                     .frame(width: 400, height: 400)
                 NavigationLink {
                     LandmarkList()
                 } label: {
-                    Text("go")
+                    Text("GO!")
                 }
             }
-        }
+        }.navigationBarTitle("").navigationBarBackButtonHidden(true).navigationBarHidden(true)
     }
 }

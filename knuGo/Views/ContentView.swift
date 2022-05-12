@@ -9,13 +9,19 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
+    @StateObject var manager = LocationManager()
+    @State var tracking:MapUserTrackingMode = .follow
+    
     var body: some View {
-        //VStack{
-            //MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
+        VStack(spacing: 0){
+//            Map(
+//               coordinateRegion: $manager.region,
+//               interactionModes: MapInteractionModes.all,
+//               showsUserLocation: true,
+//               userTrackingMode: $tracking
+//            )
             LoadingView()
-        //}
-        
-        
+        }
     }
 }
 
