@@ -14,13 +14,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0){
-//            Map(
-//               coordinateRegion: $manager.region,
-//               interactionModes: MapInteractionModes.all,
-//               showsUserLocation: true,
-//               userTrackingMode: $tracking
-//            )
-            LoadingView()
+            Map(
+               coordinateRegion: $manager.region,
+               interactionModes: MapInteractionModes.all,
+               showsUserLocation: true,
+               userTrackingMode: $tracking
+            )
+            //LoadingView()
         }
     }
 }
