@@ -17,7 +17,7 @@ struct LoadingView: View {
                 LottieView(filename: "Loading")
                     .frame(width: 400, height: 400)
                 NavigationLink {
-                    LandmarkList()
+                    MainView()
                 } label: {
                     Text("GO!")
                 }
