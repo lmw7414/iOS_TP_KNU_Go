@@ -7,10 +7,31 @@
 
 import SwiftUI
 import MapKit
+import CoreLocation
+
+
+struct Place: Identifiable {
+let id = UUID()
+let name: String
+let latitude: Double
+let longitude: Double
+var coordinate: CLLocationCoordinate2D {
+    CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+  }
+}
+
 
 struct ContentView: View {
+        
     @StateObject var manager = LocationManager()
     @State var tracking:MapUserTrackingMode = .follow
+
+    let places = [
+        Place(name: "Position 1", latitude: 31.21, longitude: 120.50),
+        Place(name: "Position 2", latitude: 31.210205, longitude: 120.52301),
+        Place(name: "Position 3", latitude: 31.230006, longitude: 120.54002)
+    ]
+
     
     var body: some View {
         VStack(spacing: 0){
@@ -18,8 +39,26 @@ struct ContentView: View {
                coordinateRegion: $manager.region,
                interactionModes: MapInteractionModes.all,
                showsUserLocation: true,
-               userTrackingMode: $tracking
-            )
+               userTrackingMode: $tracking,
+               annotationItems: places
+            ){ place in
+                MapAnnotation(coordinate: place.coordinate){
+                    VStack {
+                        NavigationView{
+                            NavigationLink(destination: Text("Destination View")) {
+                                Text("Destination 페이지로 이동하기")
+                            }
+                            .navigationTitle("Navigation Link")
+                          }
+                        Image(systemName: "moon.stars.fill").resizable()
+                            .foregroundColor(.red)
+                            .frame(width: 44, height: 44)
+                            .background(.white).clipShape(Circle())
+                        Text(place.name)
+                    }
+                    
+                }
+            }
             //LoadingView()
         }
     }
