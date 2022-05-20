@@ -62,41 +62,6 @@ struct MapAnnotationView: View {
     }
 }
 
-struct ListView: View {
-    
-//    @GestureState private var dragOffset = CGSize.zero
-    
-//    @State var btnpressed = false
-    
-    var body: some View{
-        VStack {
-            
-                   LandmarkList()
-//                       .navigationBarItems(leading: Button(action : {
-//                           MapAnnotationView().annotationclicked = false
-//                           btnpressed = true
-//                       }){
-//                           Image(systemName: "arrow.left")
-//                               .foregroundColor(Color.blue)
-//                       })
-//                       .frame(maxWidth: .infinity, maxHeight : .infinity)
-//
-//                   Spacer()
-               }
-//            .navigate(to: MapAnnotationView(), when: $btnpressed)
-//               .edgesIgnoringSafeArea(.top)
-//               .gesture(DragGesture().updating($dragOffset, body: { (value, state, transaction) in
-//
-//                   if(value.startLocation.x < 20 && value.translation.width > 100) {
-//                       MapAnnotationView().annotationclicked = false
-//                   }
-//
-//               }))
-    }
-    
-}
-
-
 struct ContentView: View {
         
     @StateObject var manager = LocationManager()
