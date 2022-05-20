@@ -20,11 +20,89 @@ var coordinate: CLLocationCoordinate2D {
   }
 }
 
+struct MapAnnotationView: View {
+    @StateObject var manager = LocationManager()
+    @State var tracking:MapUserTrackingMode = .follow
+
+    @State var annotationclicked = false
+    
+    let places = [
+        Place(name: "Position 1", latitude: 31.21, longitude: 120.50),
+        Place(name: "Position 2", latitude: 31.210205, longitude: 120.52301),
+        Place(name: "Position 3", latitude: 31.230006, longitude: 120.54002)
+    ]
+    
+    var body: some View {
+        Map(
+           coordinateRegion: $manager.region,
+           interactionModes: MapInteractionModes.all,
+           showsUserLocation: true,
+           userTrackingMode: $tracking,
+           annotationItems: places
+        ){ place in
+            MapAnnotation(coordinate: place.coordinate){
+                VStack {
+//                        NavigationView{
+//                            NavigationLink(destination: LandmarkList()) {
+//                            }
+//                            .navigationTitle("Navigation Link")
+//                          }
+                    Image(systemName: "moon.stars.fill").resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 44, height: 44)
+                        .background(.white).clipShape(Circle())
+                    Text(place.name)
+                }.onTapGesture(count: 1, perform: {
+                    annotationclicked = true
+                })
+
+                
+            }
+        }.navigate(to: LandmarkList(), when: $annotationclicked)
+    }
+}
+
+struct ListView: View {
+    
+//    @GestureState private var dragOffset = CGSize.zero
+    
+//    @State var btnpressed = false
+    
+    var body: some View{
+        VStack {
+            
+                   LandmarkList()
+//                       .navigationBarItems(leading: Button(action : {
+//                           MapAnnotationView().annotationclicked = false
+//                           btnpressed = true
+//                       }){
+//                           Image(systemName: "arrow.left")
+//                               .foregroundColor(Color.blue)
+//                       })
+//                       .frame(maxWidth: .infinity, maxHeight : .infinity)
+//
+//                   Spacer()
+               }
+//            .navigate(to: MapAnnotationView(), when: $btnpressed)
+//               .edgesIgnoringSafeArea(.top)
+//               .gesture(DragGesture().updating($dragOffset, body: { (value, state, transaction) in
+//
+//                   if(value.startLocation.x < 20 && value.translation.width > 100) {
+//                       MapAnnotationView().annotationclicked = false
+//                   }
+//
+//               }))
+    }
+    
+}
+
 
 struct ContentView: View {
         
     @StateObject var manager = LocationManager()
     @State var tracking:MapUserTrackingMode = .follow
+    
+    @State private var annotationclicked = false
 
     let places = [
         Place(name: "Position 1", latitude: 31.21, longitude: 120.50),
@@ -35,32 +113,59 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0){
-            Map(
-               coordinateRegion: $manager.region,
-               interactionModes: MapInteractionModes.all,
-               showsUserLocation: true,
-               userTrackingMode: $tracking,
-               annotationItems: places
-            ){ place in
-                MapAnnotation(coordinate: place.coordinate){
-                    VStack {
-                        NavigationView{
-                            NavigationLink(destination: Text("Destination View")) {
-                                Text("Destination 페이지로 이동하기")
-                            }
-                            .navigationTitle("Navigation Link")
-                          }
-                        Image(systemName: "moon.stars.fill").resizable()
-                            .foregroundColor(.red)
-                            .frame(width: 44, height: 44)
-                            .background(.white).clipShape(Circle())
-                        Text(place.name)
-                    }
-                    
+//            Map(
+//               coordinateRegion: $manager.region,
+//               interactionModes: MapInteractionModes.all,
+//               showsUserLocation: true,
+//               userTrackingMode: $tracking,
+//               annotationItems: places
+//            ){ place in
+//                MapAnnotation(coordinate: place.coordinate){
+//                    VStack {
+////                        NavigationView{
+////                            NavigationLink(destination: LandmarkList()) {
+////                            }
+////                            .navigationTitle("Navigation Link")
+////                          }
+//                        Image(systemName: "moon.stars.fill").resizable()
+//                            .foregroundColor(.red)
+//                            .frame(width: 44, height: 44)
+//                            .background(.white).clipShape(Circle())
+//                        Text(place.name)
+//                    }.onTapGesture(count: 1, perform: {
+//                        annotationclicked = true
+//                    })
+//
+//
+//                }
+//            }.navigate(to: LandmarkList(), when: $annotationclicked)
+//            //LoadingView()
+            MapAnnotationView()
+        }
+    }
+}
+
+extension View {
+    //  새로운 view로 이동한다.
+    //   - view: 이동할 view
+    //   - binding: 이 값이 true일때만 navigate가 실행된다.
+    func navigate<NewView: View>(to view: NewView, when binding: Binding<Bool>) -> some View {
+        NavigationView {
+            ZStack {
+                self
+                    .navigationBarTitle("")
+                    .navigationBarHidden(true)
+                NavigationLink(
+                    destination: view
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                    ,isActive: binding
+                ) {
+                    EmptyView()
                 }
             }
-            //LoadingView()
         }
+        .navigationViewStyle(.stack)
     }
 }
 
