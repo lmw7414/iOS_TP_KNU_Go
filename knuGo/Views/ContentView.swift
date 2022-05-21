@@ -26,6 +26,8 @@ struct MapAnnotationView: View {
 
     @State var annotationclicked = false
     
+    @EnvironmentObject var viewChanger: ModelData
+    
     let places = [
         Place(name: "Position 1", latitude: 31.21, longitude: 120.50),
         Place(name: "Position 2", latitude: 31.210205, longitude: 120.52301),
@@ -52,65 +54,34 @@ struct MapAnnotationView: View {
                         .frame(width: 44, height: 44)
                         .background(.white).clipShape(Circle())
                     Text(place.name)
-                }.onTapGesture(count: 1, perform: {
-                    annotationclicked = true
-                })
+                }
 
-                
             }
-        }.navigate(to: LandmarkList(), when: $annotationclicked)
+        }
+//        .navigate(to: LandmarkList(), when: $annotationclicked)
     }
 }
 
 struct ContentView: View {
-        
-    @StateObject var manager = LocationManager()
-    @State var tracking:MapUserTrackingMode = .follow
     
-    @State private var annotationclicked = false
-
-    let places = [
-        Place(name: "Position 1", latitude: 31.21, longitude: 120.50),
-        Place(name: "Position 2", latitude: 31.210205, longitude: 120.52301),
-        Place(name: "Position 3", latitude: 31.230006, longitude: 120.54002)
-    ]
-
+    @EnvironmentObject var viewChanger: ModelData
     
     var body: some View {
-        VStack(spacing: 0){
-//            Map(
-//               coordinateRegion: $manager.region,
-//               interactionModes: MapInteractionModes.all,
-//               showsUserLocation: true,
-//               userTrackingMode: $tracking,
-//               annotationItems: places
-//            ){ place in
-//                MapAnnotation(coordinate: place.coordinate){
-//                    VStack {
-////                        NavigationView{
-////                            NavigationLink(destination: LandmarkList()) {
-////                            }
-////                            .navigationTitle("Navigation Link")
-////                          }
-//                        Image(systemName: "moon.stars.fill").resizable()
-//                            .foregroundColor(.red)
-//                            .frame(width: 44, height: 44)
-//                            .background(.white).clipShape(Circle())
-//                        Text(place.name)
-//                    }.onTapGesture(count: 1, perform: {
-//                        annotationclicked = true
-//                    })
-//
-//
-//                }
-//            }.navigate(to: LandmarkList(), when: $annotationclicked)
-//            //LoadingView()
+        switch viewChanger.currentPage{
+        case .viewer1:
             MapAnnotationView()
+        case .viewer2:
+            LandmarkList()
+//                .transition(.scale)
+//            print("add new view")
         }
+        
     }
 }
 
 extension View {
+    // 여러번 화면 전환시 오류 발생함
+    // (ZStack 방식 올바르지 않게 사용해서 그런 것으로 추정? viewChanger 방식으로 수정함.)
     //  새로운 view로 이동한다.
     //   - view: 이동할 view
     //   - binding: 이 값이 true일때만 navigate가 실행된다.
@@ -138,5 +109,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(ModelData())
+//            .environmentObject(ViewChanger())
+
     }
 }

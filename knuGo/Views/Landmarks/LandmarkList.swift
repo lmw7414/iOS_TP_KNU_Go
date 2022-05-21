@@ -18,7 +18,7 @@ struct LandmarkList: View {
     }
     
     @State var btnpressed = false
-    
+    @EnvironmentObject var viewChanger: ModelData
     @GestureState private var dragOffset = CGSize.zero
 
     
@@ -48,8 +48,9 @@ struct LandmarkList: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                                 Button(action: {
                                     print("button was tapped")
-                                    btnpressed = true
-                                    MapAnnotationView().annotationclicked = false
+//                                    btnpressed = true
+                                    viewChanger.currentPage = .viewer1
+//                                    MapAnnotationView().annotationclicked = false
                                 }) {
                                     Image(systemName: "arrow.left")
                                 }
@@ -59,8 +60,9 @@ struct LandmarkList: View {
             .gesture(DragGesture().updating($dragOffset, body: { (value, state, transaction) in
             
                                if(value.startLocation.x < 20 && value.translation.width > 100) {
-                                   MapAnnotationView().annotationclicked = false
+//                                   MapAnnotationView().annotationclicked = false
                                    btnpressed = true
+                                   viewChanger.currentPage = .viewer1
                                }
             
                            }))

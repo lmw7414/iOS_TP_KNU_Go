@@ -11,12 +11,15 @@ import SwiftUI
 @main
 struct knuGoApp: App {
     @StateObject private var modelData = ModelData()
+//    @StateObject private var viewChanger = ViewChanger()
+    
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(modelData)
         }
+
     }
 }
 
