@@ -35,31 +35,35 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 0){
-            Map(
-               coordinateRegion: $manager.region,
-               interactionModes: MapInteractionModes.all,
-               showsUserLocation: true,
-               userTrackingMode: $tracking,
-               annotationItems: places
-            ){ place in
-                MapAnnotation(coordinate: place.coordinate){
-                    VStack {
-                        NavigationView{
-                            NavigationLink(destination: Text("Destination View")) {
-                                Text("Destination 페이지로 이동하기")
-                            }
-                            .navigationTitle("Navigation Link")
-                          }
-                        Image(systemName: "moon.stars.fill").resizable()
-                            .foregroundColor(.red)
-                            .frame(width: 44, height: 44)
-                            .background(.white).clipShape(Circle())
-                        Text(place.name)
-                    }
-                    
-                }
-            }
-            //LoadingView()
+//            Map(
+//               coordinateRegion: $manager.region,
+//               interactionModes: MapInteractionModes.all,
+//               showsUserLocation: true,
+//               userTrackingMode: $tracking,
+//               annotationItems: places
+//            ){ place in
+//                MapAnnotation(coordinate: place.coordinate){
+//                    VStack {
+//                        NavigationView{
+//                            NavigationLink {
+//                                LandmarkList()
+//                            } label: {
+//                                Text("GO!")
+//                            }
+//                            .buttonStyle(PlainButtonStyle())
+//                            .navigationTitle("Navigation Link")
+//
+//                          }
+//                        Image(systemName: "moon.stars.fill").resizable()
+//                            .foregroundColor(.red)
+//                            .frame(width: 44, height: 44)
+//                            .background(.white).clipShape(Circle())
+//                        Text(place.name)
+//                    }
+//
+//                }
+//            }
+            MapView()
         }
     }
 }

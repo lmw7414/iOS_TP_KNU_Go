@@ -11,26 +11,58 @@ import CoreLocation
 
 
 struct MapView: View {
-    var coordinate: CLLocationCoordinate2D
+    @StateObject var manager = LocationManager()
+    @State var tracking:MapUserTrackingMode = .follow
+    
     @State private var region = MKCoordinateRegion()
+    
+    @EnvironmentObject var modelData: ModelData
+    
+    
     var body: some View {
-        Map(coordinateRegion: $region)
-            .onAppear {
-                setRegion(coordinate)
+        Map(
+           coordinateRegion: $manager.region,
+           interactionModes: MapInteractionModes.all,
+           showsUserLocation: true,
+           userTrackingMode: $tracking,
+           annotationItems: modelData.landmarks
+        ){ place in
+            MapAnnotation(coordinate: place.locationCoordinate){
+                VStack {
+                    NavigationView{
+                        NavigationLink {
+                            LandmarkList()
+                        } label: {
+                            Text("GO!")
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        .navigationTitle("Navigation Link")
+                        
+                      }
+                    Image(systemName: "moon.stars.fill").resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 44, height: 44)
+                        .background(.white).clipShape(Circle())
+                    Text(place.name)
+                }
+                
             }
+        }
     }
 
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,
-            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+            span: MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
         
         )
     }
 }
 
 struct MapView_Previews: PreviewProvider {
+    static let modelData = ModelData()
     static var previews: some View {
-        MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
+        MapView()
+            .environmentObject(modelData)
     }
 }

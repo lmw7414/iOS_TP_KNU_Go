@@ -20,7 +20,7 @@ struct LandmarkDetail: View {
     var body: some View {
     
         ScrollView {
-            MapView(coordinate: landmark.locationCoordinate)
+            MapView()
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
