@@ -7,9 +7,11 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    @Published var currentPage: Views = .viewer1
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
