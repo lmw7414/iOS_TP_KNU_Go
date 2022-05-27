@@ -51,8 +51,8 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <LocationScenarioReference
-         identifier = "Hong Kong, China"
-         referenceType = "1">
+         identifier = "../../knuGo/Preview Content/SimulatedLocations.gpx"
+         referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction

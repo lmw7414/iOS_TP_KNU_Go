@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33061B74283770A70096F847 /* ViewChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33061B73283770A70096F847 /* ViewChanger.swift */; };
 		33061B76283771770096F847 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33061B75283771770096F847 /* Views.swift */; };
+		33AF26662840A7BE0077AC63 /* SimulatedLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 33AF26652840A7BE0077AC63 /* SimulatedLocations.gpx */; };
 		60D11630282D2E9D0075B3A7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D1162F282D2E9D0075B3A7 /* LocationManager.swift */; };
 		C69413242836507300AF2B45 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C69413232836507300AF2B45 /* Lottie */; };
 		C69413842836638700AF2B45 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69413832836638700AF2B45 /* File.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		33061B73283770A70096F847 /* ViewChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChanger.swift; sourceTree = "<group>"; };
 		33061B75283771770096F847 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		33AF26652840A7BE0077AC63 /* SimulatedLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimulatedLocations.gpx; sourceTree = "<group>"; };
 		60D1162F282D2E9D0075B3A7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C69413832836638700AF2B45 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C69413852836651F00AF2B45 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		D270683828255A0100D66A64 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				33AF26652840A7BE0077AC63 /* SimulatedLocations.gpx */,
 				D270683928255A0100D66A64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -242,6 +245,7 @@
 				D270683728255A0100D66A64 /* Assets.xcassets in Resources */,
 				D2CEB32E282D1540002AF4D1 /* Loading.json in Resources */,
 				D270684D28255B6800D66A64 /* landmarkData.json in Resources */,
+				33AF26662840A7BE0077AC63 /* SimulatedLocations.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

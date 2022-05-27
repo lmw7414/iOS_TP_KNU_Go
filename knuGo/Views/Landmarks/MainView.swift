@@ -14,12 +14,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-                Map(
-                   coordinateRegion: $manager.region,
-                   interactionModes: MapInteractionModes.all,
-                   showsUserLocation: true,
-                   userTrackingMode: $tracking
-                )
+                MapAnnotationView()
             SlideOverView {
                 VStack {
                     LandmarkList()
@@ -30,7 +25,6 @@ struct MainView: View {
 }
 
 struct SlideOverView<Content> : View where Content : View {
-
     var content: () -> Content
     
     public init(content: @escaping () -> Content) {
@@ -41,7 +35,6 @@ struct SlideOverView<Content> : View where Content : View {
         ModifiedContent(content: self.content(), modifier: CardView())
     }
 }
-
 
 struct CardView: ViewModifier {
     @State private var dragging = false

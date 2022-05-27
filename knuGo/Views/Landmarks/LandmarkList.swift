@@ -21,9 +21,7 @@ struct LandmarkList: View {
     @EnvironmentObject var viewChanger: ModelData
     @GestureState private var dragOffset = CGSize.zero
 
-    
     var body: some View {
-
         
         NavigationView {
             List {
@@ -52,7 +50,7 @@ struct LandmarkList: View {
                                     viewChanger.currentPage = .viewer1
 //                                    MapAnnotationView().annotationclicked = false
                                 }) {
-                                    Image(systemName: "arrow.left")
+                                    Image(systemName: "chevron.backward")
                                 }
                             }
             }

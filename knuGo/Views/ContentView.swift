@@ -44,11 +44,6 @@ struct MapAnnotationView: View {
         ){ place in
             MapAnnotation(coordinate: place.coordinate){
                 VStack {
-//                        NavigationView{
-//                            NavigationLink(destination: LandmarkList()) {
-//                            }
-//                            .navigationTitle("Navigation Link")
-//                          }
                     Image(systemName: "moon.stars.fill").resizable()
                         .foregroundColor(.red)
                         .frame(width: 44, height: 44)
@@ -56,28 +51,26 @@ struct MapAnnotationView: View {
                     Text(place.name)
                 }
                 .onTapGesture(count: 1, perform: {
-//                    annotationclicked = true
                     viewChanger.currentPage = .viewer2
                 })
 
             }
         }
-//        .navigate(to: LandmarkList(), when: $annotationclicked)
+        
     }
 }
 
 struct ContentView: View {
-    
-    
     @EnvironmentObject var viewChanger: ModelData
     
     var body: some View {
         switch viewChanger.currentPage{
         case .viewer1:
-            MapAnnotationView()
+            MainView()
         case .viewer2:
             LandmarkList()
-//                .transition(.scale)
+//            MainView()
+            .transition(.scale)
 //            print("add new view")
         }
         
