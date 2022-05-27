@@ -9,11 +9,11 @@ import SwiftUI
 
 struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var showFavoritesOnly = false
+    @State private var isVisited = false
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
-            (!showFavoritesOnly || !landmark.isFavorite)
+            (!landmark.isVisited)
         }
     }
     
@@ -27,9 +27,9 @@ struct LandmarkList: View {
         
         NavigationView {
             List {
-                Section(header: Text("내가 가본 곳")) {
-                    Toggle(isOn: $showFavoritesOnly) {
-                        Text("아직 안가본곳")
+                Section {
+                    Toggle(isOn: $isVisited) {
+                        Text("내가 방문한 곳")
                     }
                 }.headerProminence(.increased)
                 Section(header: Text("장소")){
@@ -48,9 +48,9 @@ struct LandmarkList: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                                 Button(action: {
                                     print("button was tapped")
-//                                    btnpressed = true
+                                   btnpressed = true
                                     viewChanger.currentPage = .viewer1
-//                                    MapAnnotationView().annotationclicked = false
+                                    //MapAnnotationView().annotationclicked = false
                                 }) {
                                     Image(systemName: "arrow.left")
                                 }

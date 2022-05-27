@@ -5,8 +5,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
+        "isVisited": true,
         "park": "경북대학교 본관",
         "coordinates": {
             "longitude": 128.6120049,
@@ -23,8 +22,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1002,
-        "isFeatured": true,
-        "isFavorite": true,
+        "isVisited": true,
         "park": "센트럴파크",
         "coordinates": {
             "longitude": 128.61466801,
@@ -39,8 +37,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1003,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "융복합관 앞",
         "coordinates": {
             "longitude": 128.61215198,
@@ -55,8 +52,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1004,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "경북대학교 북문",
         "coordinates": {
             "longitude": 128.6093298,
@@ -71,8 +67,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1005,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "융복합관 앞",
         "coordinates": {
             "longitude": 128.61174098,
@@ -87,8 +82,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1006,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "도서관 구관 옆",
         "coordinates": {
             "longitude": 128.61267973,
@@ -103,8 +97,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1007,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "도서관 앞",
         "coordinates": {
             "longitude": 128.61260894,
@@ -119,8 +112,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1008,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "도서관 신관 옆",
         "coordinates": {
             "longitude": 128.61202462,
@@ -135,8 +127,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1009,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "테크노빌딩 앞",
         "coordinates": {
             "longitude": 128.61478278,
@@ -151,8 +142,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1010,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "누리관 앞",
         "coordinates": {
             "longitude": 128.61388954,
@@ -167,8 +157,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1011,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "일청담, 테니스장 근처",
         "coordinates": {
             "longitude": 128.61161696,
@@ -183,8 +172,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1012,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "공대12호관 앞",
         "coordinates": {
             "longitude": 128.609572,
@@ -199,8 +187,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1013,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "공대 12호관 옆 식당",
         "coordinates": {
             "longitude": 128.60966602,
@@ -215,8 +202,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1014,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "4호관 옆",
         "coordinates": {
             "longitude": 128.6114566,
@@ -231,8 +217,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1015,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "도서관, 본관 앞",
         "coordinates": {
             "longitude": 128.61150191,
@@ -247,8 +232,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1016,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "테니스장 옆 산책로",
         "coordinates": {
             "longitude": 128.61126821,
@@ -263,8 +247,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1001,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "누리관",
         "coordinates": {
             "longitude": 128.61324419,
@@ -280,8 +263,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1018,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isVisited": false,
         "park": "테크노빌딩 앞",
         "coordinates": {
             "longitude": 128.61494834,

@@ -19,7 +19,7 @@ struct LandmarkRow: View {
 
             Spacer()
 
-            if landmark.isFavorite {
+            if landmark.isVisited {
                 Image(systemName: "checkmark")
                     .foregroundColor(.blue)
             }
