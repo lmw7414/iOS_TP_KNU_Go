@@ -41,7 +41,7 @@ struct MapView: View {
                         .navigationTitle("Navigation Link")
                         
                       }
-                    Image(systemName: "moon.stars.fill").resizable()
+                    place.image.resizable()
                         .foregroundColor(.red)
                         .frame(width: 44, height: 44)
                         .background(.white).clipShape(Circle())
