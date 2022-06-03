@@ -47,9 +47,7 @@ struct MapView: View {
                         .background(.white).clipShape(Circle())
                     Text(place.name)
                 }
-                .onTapGesture(count: 1, perform: {
-                    viewChanger.currentPage = .viewer2
-                                  })
+                
             }
         }
     }

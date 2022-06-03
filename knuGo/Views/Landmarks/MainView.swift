@@ -11,21 +11,18 @@ import MapKit
 struct MainView: View {
     @StateObject var manager = LocationManager()
     @State var tracking:MapUserTrackingMode = .follow
-    
+    @EnvironmentObject var viewChanger: ModelData
     var body: some View {
         ZStack {
-                Map(
-                   coordinateRegion: $manager.region,
-                   interactionModes: MapInteractionModes.all,
-                   showsUserLocation: true,
-                   userTrackingMode: $tracking
-                )
+                MapView()
             SlideOverView {
                 VStack {
                     LandmarkList()
                 }
             }
-        }
+        }.onTapGesture(count: 1, perform: {
+            viewChanger.currentPage = .viewer2
+                          })
     }
 }
 

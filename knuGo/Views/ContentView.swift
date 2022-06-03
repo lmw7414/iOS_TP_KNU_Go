@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         switch viewChanger.currentPage{
         case .viewer1:
-            MapView()
+            MainView()
         case .viewer2:
             LandmarkList()
         }
