@@ -9,11 +9,11 @@ import SwiftUI
 
 struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var isVisited = false
+    @State private var showVisitedOnly = false
     
     var filteredLandmarks: [Landmark] {
         modelData.landmarks.filter { landmark in
-            (!landmark.isVisited)
+            (!showVisitedOnly || landmark.isVisited)
         }
     }
     
@@ -28,7 +28,7 @@ struct LandmarkList: View {
         NavigationView {
             List {
                 Section {
-                    Toggle(isOn: $isVisited) {
+                    Toggle(isOn: $showVisitedOnly) {
                         Text("내가 방문한 곳")
                     }
                 }.headerProminence(.increased)

@@ -20,8 +20,9 @@ struct LandmarkRow: View {
             Spacer()
 
             if landmark.isVisited {
-                Image(systemName: "badge")
-                    .foregroundColor(.blue)
+                Image("badge")
+                    .resizable()
+                    .frame(width: 50, height: 50)
             }
         }
     }
