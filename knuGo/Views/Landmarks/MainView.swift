@@ -14,15 +14,17 @@ struct MainView: View {
     @EnvironmentObject var viewChanger: ModelData
     var body: some View {
         ZStack {
-                MapView()
+
+            MapView()
             SlideOverView {
                 VStack {
                     LandmarkList()
                 }
             }
-        }.onTapGesture(count: 1, perform: {
-            viewChanger.currentPage = .viewer2
-                          })
+        }
+//        .onTapGesture(count: 1, perform: {
+//            viewChanger.currentPage = .viewer2
+//                          })
     }
 }
 

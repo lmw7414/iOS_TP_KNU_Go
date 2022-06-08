@@ -4,11 +4,5 @@
 <dict>
 	<key>NSAppTransportSecurity</key>
 	<dict/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This application requires location services to work</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This application requires location services to work</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Location is required to find out where you are</string>
 </dict>
 </plist>

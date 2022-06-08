@@ -16,10 +16,12 @@ struct MapView: View {
     @State var tracking:MapUserTrackingMode = .follow
     
     @State private var region = MKCoordinateRegion()
+    @State private var showingAlert = false
     
     @EnvironmentObject var modelData: ModelData
     
     @EnvironmentObject var viewChanger: ModelData
+    
     
     var body: some View {
         Map(
@@ -30,32 +32,54 @@ struct MapView: View {
            annotationItems: modelData.landmarks
         ){ place in
             MapAnnotation(coordinate: place.locationCoordinate){
-                VStack {
-                    NavigationView{
-                        NavigationLink {
-                            LandmarkList()
-                        } label: {
-                            Text("GO!")
-                        }
-                        .buttonStyle(PlainButtonStyle())
-                        .navigationTitle("Navigation Link")
+                    if !place.isVisited  {
+                            Button(action: {
+                                        self.showingAlert = true
+                                        
+                                    }) {
+                                        ZStack {
+                                            place.image.resizable()
+                                                .grayscale(0.9995)
+                                                .foregroundColor(.red)
+                                                .frame(width: 44, height: 44)
+                                                .background(.white).clipShape(Circle())
+                                            Text("?")
+                                                .font(.title)
+                                                .fontWeight(.bold)
+                                                .foregroundColor(Color.red)
+                                        }
+                                    }
+                                    .alert(isPresented: $showingAlert) {
+                                        Alert(title: Text("월파원"), message: Text("월파원 도착"), dismissButton: .default(Text("확인")))
+                                    }
+                        //Text(place.name)
+                    }else {
                         
-                      }
-                    place.image.resizable()
-                        .foregroundColor(.red)
-                        .frame(width: 44, height: 44)
-                        .background(.white).clipShape(Circle())
-                    Text(place.name)
-                }
-                
+                        Button(action: {
+                            self.showingAlert = true
+                        }){
+                            ZStack {
+                                place.image.resizable()
+                                    .foregroundColor(.red)
+                                    .frame(width: 44, height: 44)
+                                    .background(.white).clipShape(Circle())
+                                Text(place.name)
+                            }
+                        }
+                        .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("월파원"), message: Text("월파원 도착"), dismissButton: .default(Text("확인")))
+                        }
+                        
+                    }
             }
+            
         }
     }
 
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,
-            span: MKCoordinateSpan(latitudeDelta: 0.001, longitudeDelta: 0.001)
+            span: MKCoordinateSpan(latitudeDelta: 0.0005, longitudeDelta: 0.0005)
         
         )
     }
@@ -94,3 +118,4 @@ struct MapView_Previews: PreviewProvider {
             .environmentObject(modelData)
     }
 }
+

@@ -64,7 +64,6 @@ struct LandmarkList: View {
                                    btnpressed = true
                                    viewChanger.currentPage = .viewer1
                                }
-            
                            }))
         }
         
