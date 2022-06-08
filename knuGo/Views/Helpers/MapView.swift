@@ -54,7 +54,6 @@ struct MapView: View {
                                     }
                         //Text(place.name)
                     }else {
-                        
                         Button(action: {
                             self.showingAlert = true
                         }){
@@ -71,6 +70,19 @@ struct MapView: View {
                         }
                         
                     }
+
+//                      }
+//                    place.image.resizable()
+//                        .foregroundColor(.red)
+//                        .frame(width: 44, height: 44)
+//                        .background(.white).clipShape(Circle())
+//                        .onTapGesture(count: 1, perform: {
+//                            viewChanger.currentPage = .viewer2
+//                                          })
+//                    Text(place.name)
+//                }
+                
+
             }
             
         }
@@ -82,32 +94,6 @@ struct MapView: View {
             span: MKCoordinateSpan(latitudeDelta: 0.0005, longitudeDelta: 0.0005)
         
         )
-    }
-}
-
-extension View {
-    // 여러번의 화면 전환시 오류 발생함
-    // (ZStack 방식 올바르지 않게 사용해서 그런 것으로 추정됨. viewChanger 방식으로 수정함.)
-    //  새로운 view로 이동한다.
-    //   - view: 이동할 view
-    //   - binding: 이 값이 true일때만 navigate가 실행된다.
-    func navigate<NewView: View>(to view: NewView, when binding: Binding<Bool>) -> some View {
-        NavigationView {
-            ZStack {
-                self
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
-                NavigationLink(
-                    destination: view
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-                    ,isActive: binding
-                ) {
-                    EmptyView()
-                }
-            }
-        }
-        .navigationViewStyle(.stack)
     }
 }
 

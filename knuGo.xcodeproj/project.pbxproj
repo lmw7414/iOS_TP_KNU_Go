@@ -11,7 +11,6 @@
 		60D11630282D2E9D0075B3A7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D1162F282D2E9D0075B3A7 /* LocationManager.swift */; };
 		60E3B9D3283FAACB00B41B8C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 60E3B9D2283FAACB00B41B8C /* Lottie */; };
 		C69413242836507300AF2B45 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C69413232836507300AF2B45 /* Lottie */; };
-		C69413842836638700AF2B45 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69413832836638700AF2B45 /* File.swift */; };
 		C69413862836651F00AF2B45 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69413852836651F00AF2B45 /* MainView.swift */; };
 		D2706833282559FE00D66A64 /* knuGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2706832282559FE00D66A64 /* knuGoApp.swift */; };
 		D270683728255A0100D66A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D270683628255A0100D66A64 /* Assets.xcassets */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		33061B75283771770096F847 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		60D1162F282D2E9D0075B3A7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		C69413832836638700AF2B45 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C69413852836651F00AF2B45 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D270682F282559FE00D66A64 /* knuGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knuGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2706832282559FE00D66A64 /* knuGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knuGoApp.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 		D2706826282559FE00D66A64 = {
 			isa = PBXGroup;
 			children = (
-				C69413832836638700AF2B45 /* File.swift */,
 				D2706831282559FE00D66A64 /* knuGo */,
 				D2706830282559FE00D66A64 /* Products */,
 				60E3B9D4283FAAF200B41B8C /* Frameworks */,
@@ -276,7 +273,6 @@
 				D270685028255B7700D66A64 /* Landmark.swift in Sources */,
 				D270685328255B8600D66A64 /* ContentView.swift in Sources */,
 				D270686128255BBA00D66A64 /* MapView.swift in Sources */,
-				C69413842836638700AF2B45 /* File.swift in Sources */,
 				D270685928255BB000D66A64 /* LandmarkDetail.swift in Sources */,
 				D270685128255B7700D66A64 /* ModelData.swift in Sources */,
 				D2CEB32D282D1540002AF4D1 /* LottieView.swift in Sources */,
