@@ -56,7 +56,7 @@ struct LandmarkList: View {
                                 }
                             }
             }
-            .navigate(to: MapView(), when: $btnpressed)
+//            .navigate(to: MapView(), when: $btnpressed)
             .gesture(DragGesture().updating($dragOffset, body: { (value, state, transaction) in
             
                                if(value.startLocation.x < 20 && value.translation.width > 100) {
