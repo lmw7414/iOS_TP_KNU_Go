@@ -49,9 +49,6 @@ struct MapView: View {
                                                 .foregroundColor(Color.red)
                                         }
                                     }
-                                    .alert(isPresented: $showingAlert) {
-                                        Alert(title: Text("일청담"), message: Text("일청담 도착"), dismissButton: .default(Text("확인")))
-                                    }
                         //Text(place.name)
                     }else {
                         Button(action: {
@@ -66,7 +63,7 @@ struct MapView: View {
                             }
                         }
                         .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("일청담"), message: Text("일청담 도착"), dismissButton: .default(Text("확인")))
+                            Alert(title: Text("\(place.name)"), message: Text("\(place.name) 도착"), dismissButton: .default(Text("확인")))
                         }
                         
                     }
