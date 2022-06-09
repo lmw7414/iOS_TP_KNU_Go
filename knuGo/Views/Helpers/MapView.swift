@@ -50,7 +50,7 @@ struct MapView: View {
                                         }
                                     }
                                     .alert(isPresented: $showingAlert) {
-                                        Alert(title: Text("월파원"), message: Text("월파원 도착"), dismissButton: .default(Text("확인")))
+                                        Alert(title: Text("일청담"), message: Text("일청담 도착"), dismissButton: .default(Text("확인")))
                                     }
                         //Text(place.name)
                     }else {
@@ -66,7 +66,7 @@ struct MapView: View {
                             }
                         }
                         .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("월파원"), message: Text("월파원 도착"), dismissButton: .default(Text("확인")))
+                            Alert(title: Text("일청담"), message: Text("일청담 도착"), dismissButton: .default(Text("확인")))
                         }
                         
                     }

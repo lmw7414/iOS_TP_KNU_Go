@@ -22,9 +22,9 @@ struct MainView: View {
                 }
             }
         }
-//        .onTapGesture(count: 1, perform: {
-//            viewChanger.currentPage = .viewer2
-//                          })
+        .onTapGesture(count: 1, perform: {
+            viewChanger.currentPage = .viewer2
+                          })
     }
 }
 

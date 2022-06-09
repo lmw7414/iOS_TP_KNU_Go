@@ -5,13 +5,13 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1001,
-        "isVisited": false,
+        "isVisited": true,
         "park": "경북대학교 본관",
         "coordinates": {
             "longitude": 128.6120049,
             "latitude": 35.89043757
             },
-        "description": "경북대학교의 가장 오래된 건물!",
+        "description": "경북대학교의 가장 오래된 건물! 학사관련 다양한 부서들이 있고 총장님도 여기 계신다. 본관 앞 계단에서 가위바위보 놀이를 하면 썸은 이루어진다?!",
         "imageName": "picture1"
     },
     
@@ -37,13 +37,13 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1003,
-        "isVisited": false,
+        "isVisited": true,
         "park": "융복합관 앞",
         "coordinates": {
             "longitude": 128.61215198,
             "latitude": 35.88866322
             },
-        "description": "커플들이 손잡고 산책하는 모습을 볼 수 있는 아주 불편한 장소",
+        "description": "사시사철 아름다운 모습을 간직하고 있는 일청담. 물고기들이 살고 있으며 비둘기와 같이 어우러져 있는게 보기 좋다. 커플들이 손잡고 산책하는 모습을 볼 수 있는 아주 불편한 장소",
         "imageName": "picture3"
     },
     {
@@ -279,11 +279,11 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1019,
-        "isVisited": false,
-        "park": "테크노빌딩 앞",
+        "isVisited": true,
+        "park": "사범대학",
         "coordinates": {
-            "longitude": 128.6126458,
-            "latitude": 35.889281
+            "longitude": 128.613350,
+            "latitude": 35.889976
             },
         "description": "새로 지어진 사범대학 건물.. 벤치가 많아 쉬기 좋으며 해질녘에는 글로벌 플라자 방면이 가장 아름답다. ",
         "imageName": "picture19"
@@ -301,7 +301,7 @@
             "longitude": 128.6126458,
             "latitude": 35.889281
             },
-        "description": "경북대의 아름다운 보물들.. 각종 석탑을 볼 수 있으면 12시만 되면 흰 소복을 입은 귀신이 나온다는 소문이....ㄷㄷ",
+        "description": "경북대의 아름다운 보물들.. 다양한 유적과 석탑들을 볼 수 있다. 그런데... 12시만 되면 흰 소복을 입은 귀신이 나온다는 소문이....ㄷㄷ",
         "imageName": "picture20"
     }
     

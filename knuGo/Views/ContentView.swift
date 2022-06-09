@@ -18,14 +18,14 @@ struct ContentView: View {
     
 
     var body: some View {
-        MainView()
+        //MainView()
 //        LoadingView()
-//        switch viewChanger.currentPage{
-//        case .viewer1:
-//            MainView()
-//        case .viewer2:
-//            LandmarkList()
-//        }
+        switch viewChanger.currentPage{
+        case .viewer1:
+            MainView()
+        case .viewer2:
+            LandmarkList()
+        }
         
     }
 }
