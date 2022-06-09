@@ -5,7 +5,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1001,
-        "isVisited": true,
+        "isVisited": false,
         "park": "경북대학교 본관",
         "coordinates": {
             "longitude": 128.6120049,
@@ -279,7 +279,7 @@
         "city": "대구광역시",
         "state": "경북대학교",
         "id": 1019,
-        "isVisited": true,
+        "isVisited": false,
         "park": "사범대학",
         "coordinates": {
             "longitude": 128.613350,
@@ -296,7 +296,7 @@
         "state": "경북대학교",
         "id": 1020,
         "isVisited": true,
-        "park": "테크노빌딩 앞",
+        "park": "경북대학교 박물관 앞",
         "coordinates": {
             "longitude": 128.6126458,
             "latitude": 35.889281
